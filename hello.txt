@@ -1,3 +1,5 @@
+# Docker ile Python uygulamalarını konteynerize etme süreci
+
 ***
 Docker ile Python uygulamalarınızı konteynerize etmek, yazılım geliştirme sürecinizi daha verimli, 
 güvenilir ve taşınabilir hale getirir. Bu, özellikle ekip çalışması, dağıtım ve ölçeklenebilirlik 
@@ -7,13 +9,16 @@ gerektiren projelerde büyük avantajlar sağlar. Docker, modern yazılım geli�
 Dockerfile, Docker imajlarını oluşturmak için bir dizi talimat içerir.
 Her talimat, Docker'a imajın nasıl oluşturulacağını söyler.
 
-3. **Docker İmajını Çalıştırın**:
-   İmajdan bir konteyner çalıştırmak için:
-   ```
-   docker run myfirstpythonapp
-   ```
+**Docker İmajını Çalıştırın**:
+İmajdan bir konteyner çalıştırmak için:
+```
+> docker run myfirstpythonapp
+```
 
-Docker, belirtilen `myfirstpythonapp` adında bir imajın yerel Docker imaj deposunda mevcut olup olmadığını kontrol eder. Eğer imaj yerel olarak bulunamazsa, Docker varsayılan olarak Docker Hub'dan bu imajı çekmeye çalışır. Ancak, burada `myfirstpythonapp` adında bir imajın önceden oluşturulmuş ve etiketlenmiş olduğunu varsayıyoruz.
+Docker, belirtilen `myfirstpythonapp` adında bir imajın yerel Docker imaj deposunda mevcut olup olmadığını
+kontrol eder. Eğer imaj yerel olarak bulunamazsa, Docker varsayılan olarak Docker Hub'dan bu imajı çekmeye
+çalışır. Ancak, burada `myfirstpythonapp` adında bir imajın önceden oluşturulmuş ve etiketlenmiş olduğunu 
+varsayıyoruz.
 
 Docker, talimatları takip ederek imajı oluşturur ve adımları katman katman inşa eder.
 
