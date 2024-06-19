@@ -7,27 +7,27 @@ gerektiren projelerde büyük avantajlar sağlar. Docker, modern yazılım geli�
 Dockerfile, Docker imajlarını oluşturmak için bir dizi talimat içerir.
 Her talimat, Docker'a imajın nasıl oluşturulacağını söyler.
 
-Docker İmajını Oluşturma 
-> docker build -t myfirstpythonapp .
+3. **Docker İmajını Çalıştırın**:
+   İmajdan bir konteyner çalıştırmak için:
+   ```
+   docker run myfirstpythonapp
+   ```
 
-> docker run myfirstpyapp 
-****
-Docker, belirtilen myfirstpyapp adında bir imajın yerel Docker imaj deposunda mevcut olup olmadığını
-kontrol eder. Eğer imaj yerel olarak bulunamazsa, Docker varsayılan olarak Docker Hub'dan bu imajı çekmeye
-çalışır. Ancak, burada myfirstpyapp adında bir imajın önceden oluşturulmuş ve etiketlenmiş olduğunu 
-varsayıyoruz. 
-****
+Docker, belirtilen `myfirstpythonapp` adında bir imajın yerel Docker imaj deposunda mevcut olup olmadığını kontrol eder. Eğer imaj yerel olarak bulunamazsa, Docker varsayılan olarak Docker Hub'dan bu imajı çekmeye çalışır. Ancak, burada `myfirstpythonapp` adında bir imajın önceden oluşturulmuş ve etiketlenmiş olduğunu varsayıyoruz.
 
 Docker, talimatları takip ederek imajı oluşturur ve adımları katman katman inşa eder.
-İmajı Oluşturma
+
+### İmajı Oluşturma
+
 Komutu çalıştırarak Docker imajını oluşturun:
-
-
-
+```
 > docker build -t listimage .
-Konteyneri Çalıştırma
+```
+
+### Konteyneri Çalıştırma
+
 Oluşturulan imajdan bir konteyner çalıştırmak için:
 
-
-
 > docker run listimage
+```
+
