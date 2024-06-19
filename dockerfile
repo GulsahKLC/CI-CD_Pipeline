@@ -1,4 +1,4 @@
 FROM python
-WORKDIR /test
-COPY . /test
-CMD ["python3", "test.py"]
+WORKDIR /app
+COPY . /app
+CMD ["python3", "app.py"]
